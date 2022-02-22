@@ -1,1 +1,15 @@
-~ untrack
+~~
+
+# Files under .gitignore_global can be edited as local .gitignore file. the code is
+
+#To create the file use:
+touch ~/.gitignore_global 
+
+#to configure it
+git config --global core.excludefiles ~/.gitignore_global
+
+#ignore logs
+*.logs
+
+#ignore the build directory
+/dist
